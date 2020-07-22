@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -10,19 +10,19 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
     AppComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://api.c432wmya2v-teamspart1-s2-public.model-t.myhybris.cloud',
-          prefix: '/occ/v2/'
+          baseUrl: 'https://localhost:9002',
+          prefix: '/occ/v2/' // 'occ/v2' for 2005 or later, 'rest/v2' for 1905
         }
       },
-       context: {
-         urlParameters: ['baseSite', 'language', 'currency'],
-         baseSite: ['electronics-spa','apparel-uk-spa'],
-         currency: ['USD', 'GBP',]
-       },
+      context: {
+        urlParameters: ['baseSite', 'language', 'currency'],
+        baseSite: ['electronics-spa','apparel-uk-spa', 'electronics'],
+        currency: ['USD', 'GBP',]
+      },
       i18n: {
         resources: translations,
         chunks: translationChunksConfig,
@@ -31,7 +31,8 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
       features: {
         level: '2.0'
       }
-    })
+    }),
+    BrowserTransferStateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
