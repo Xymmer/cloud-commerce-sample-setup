@@ -2,9 +2,9 @@
     "applications": [
         {
             "name": "spartacusstore",
-            "path": "spartacusstore"
+            "path": "spartacusstore",
+            "enableSSR": true
         }
     ],
-        "nodeVersion": "12",
-        "enableSSR": true
+        "nodeVersion": "12"
 }
