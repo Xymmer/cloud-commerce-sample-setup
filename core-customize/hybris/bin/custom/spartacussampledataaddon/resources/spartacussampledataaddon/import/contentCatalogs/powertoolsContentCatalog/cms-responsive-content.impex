@@ -319,12 +319,31 @@ INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];positi
 INSERT_UPDATE CMSFlexComponent;$contentCV[unique=true];uid[unique=true];name;flexType
 ;;CheckoutOrchestratorComponent;Checkout Orchestrator Component;CheckoutOrchestrator
 
+## Payment type page (/checkout/po-number)
+INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
+;;CheckoutPoNumber;Checkout PO Number Page;MultiStepCheckoutSummaryPageTemplate;/checkout/po-number
+
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;cmsComponents(uid, $contentCV)
+;;BodyContentSlot-checkoutPoNumber;Checkout PO Number Slot;CheckoutPaymentTypeComponent,CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutPoNumberComponent,CheckoutProgressMobileBottomComponent
+;;SideContentSlot-checkoutPoNumber;Order Summary Slot;CheckoutOrderSummaryComponent
+
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true]
+;;BodyContent-checkoutPoNumber;BodyContent;CheckoutPoNumber;BodyContentSlot-checkoutPoNumber
+;;SideContent-checkoutPoNumber;SideContent;CheckoutPoNumber;SideContentSlot-checkoutPoNumber
+
+INSERT_UPDATE CMSFlexComponent;$contentCV[unique=true];uid[unique=true];name;flexType
+;;CheckoutProgressComponent;Checkout Progress Component;CheckoutProgress
+;;CheckoutProgressMobileTopComponent;Checkout Progress Mobile Top Component;CheckoutProgressMobileTop
+;;CheckoutProgressMobileBottomComponent;Checkout Progress Mobile Bottom Component;CheckoutProgressMobileBottom
+;;CheckoutPaymentTypeComponent;Checkout Payment Type Component;CheckoutPaymentType
+;;CheckoutPoNumberComponent;Checkout PO Number Component;CheckoutPoNumberComponent
+
 ## Shipping address page (/checkout/shipping-address)
 INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
 ;;CheckoutShippingAddress;Checkout Shipping Address Page;MultiStepCheckoutSummaryPageTemplate;/checkout/shipping-address
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;cmsComponents(uid, $contentCV)
-;;BodyContentSlot-checkoutShippingAddress;Checkout Shipping Address Slot;CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutShippingAddressComponent,CheckoutProgressMobileBottomComponent
+;;BodyContentSlot-checkoutShippingAddress;Checkout Shipping Address Slot;CheckoutPaymentTypeComponent,CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutShippingAddressComponent,CheckoutProgressMobileBottomComponent
 ;;SideContentSlot-checkoutShippingAddress;Order Summary Slot;CheckoutOrderSummaryComponent
 
 INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true]
@@ -332,17 +351,14 @@ INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];positi
 ;;SideContent-checkoutShippingAddress;SideContent;CheckoutShippingAddress;SideContentSlot-checkoutShippingAddress
 
 INSERT_UPDATE CMSFlexComponent;$contentCV[unique=true];uid[unique=true];name;flexType
-;;CheckoutProgressComponent;Checkout Progress Component;CheckoutProgress
-;;CheckoutProgressMobileTopComponent;Checkout Progress Mobile Top Component;CheckoutProgressMobileTop
 ;;CheckoutShippingAddressComponent;Checkout Shipping Address Component;CheckoutShippingAddress
-;;CheckoutProgressMobileBottomComponent;Checkout Progress Mobile Bottom Component;CheckoutProgressMobileBottom
 
 ## Delivery mode page (/checkout/delivery-mode)
 INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTemplate(uid,$contentCV);label;defaultPage[default='true'];approvalStatus(code)[default='approved'];homepage[default='false']
 ;;CheckoutDeliveryMode;Checkout Delivery Mode Page;MultiStepCheckoutSummaryPageTemplate;/checkout/delivery-mode
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;cmsComponents(uid, $contentCV)
-;;BodyContentSlot-checkoutDeliveryMode;Checkout Delivery Mode Slot;CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutDeliveryModeComponent,CheckoutProgressMobileBottomComponent
+;;BodyContentSlot-checkoutDeliveryMode;Checkout Delivery Mode Slot;CheckoutPaymentTypeComponent,CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutDeliveryModeComponent,CheckoutProgressMobileBottomComponent
 ;;SideContentSlot-checkoutDeliveryMode;Order Summary Slot;CheckoutOrderSummaryComponent
 
 INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true]
@@ -357,7 +373,7 @@ INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTe
 ;;CheckoutPaymentDetails;Checkout Payment Details Page;MultiStepCheckoutSummaryPageTemplate;/checkout/payment-details
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;cmsComponents(uid, $contentCV)
-;;BodyContentSlot-checkoutPaymentDetails;Checkout Payment Details Slot;CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutPaymentDetailsComponent,CheckoutProgressMobileBottomComponent
+;;BodyContentSlot-checkoutPaymentDetails;Checkout Payment Details Slot;CheckoutPaymentTypeComponent,CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutPaymentDetailsComponent,CheckoutProgressMobileBottomComponent
 ;;SideContentSlot-checkoutPaymentDetails;Order Summary Slot;CheckoutOrderSummaryComponent
 
 INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true]
@@ -372,7 +388,7 @@ INSERT_UPDATE ContentPage;$contentCV[unique=true];uid[unique=true];name;masterTe
 ;;CheckoutReviewOrder;Checkout Review Order Page;MultiStepCheckoutSummaryPageTemplate;/checkout/review-order
 
 INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;cmsComponents(uid, $contentCV)
-;;BodyContentSlot-checkoutReviewOrder;Checkout Review Order Slot;CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutReviewOrderComponent,CheckoutProgressMobileBottomComponent
+;;BodyContentSlot-checkoutReviewOrder;Checkout Review Order Slot;CheckoutPaymentTypeComponent,CheckoutProgressComponent,CheckoutProgressMobileTopComponent,CheckoutReviewOrderComponent,CheckoutProgressMobileBottomComponent
 ;;SideContentSlot-checkoutReviewOrder;Checkout Place Order Slot;CheckoutOrderSummaryComponent,CheckoutPlaceOrderComponent
 
 INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true]
@@ -473,9 +489,9 @@ INSERT_UPDATE CMSFlexComponent;$contentCV[unique=true];uid[unique=true];name;fle
 INSERT_UPDATE CMSTabParagraphContainer;$contentCV[unique=true];uid[unique=true];simpleCMSComponents(uid, $contentCV);&componentRef
 ;;AccountOrderHistoryTabContainer;AccountOrderHistoryComponent,OrderReturnRequestListComponent;AccountOrderHistoryTabContainer
 
-# Make the order history page contain tabs
-UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(uid, $contentCV)
-;;BodyContent-orders;AccountOrderHistoryTabContainer
+# This UPDATE will make the order history page contain tabs
+#UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];cmsComponents(uid, $contentCV)
+#;;BodyContent-orders;AccountOrderHistoryTabContainer
 
 
 ###### Product Details ######
