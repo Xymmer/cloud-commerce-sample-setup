@@ -5,5 +5,6 @@
             "path": "spartacusstore"
         }
     ],
-        "nodeVersion": "12"
+        "nodeVersion": "12",
+        "enableSSR": true,
 }
