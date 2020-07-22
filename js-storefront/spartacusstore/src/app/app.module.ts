@@ -15,7 +15,7 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
       backend: {
         occ: {
           baseUrl: 'https://api.c432wmya2v-teamspart1-s2-public.model-t.myhybris.cloud',
-          prefix: '/occ/v2' // 'occ/v2' for 2005 or later, 'rest/v2' for 1905
+          prefix: '/occ/v2/' // 'occ/v2' for 2005 or later, 'rest/v2' for 1905
         }
       },
       context: {
