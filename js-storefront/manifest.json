@@ -6,5 +6,5 @@
         }
     ],
         "nodeVersion": "12",
-        "enableSSR": "true"
+        "enableSSR": true
 }
