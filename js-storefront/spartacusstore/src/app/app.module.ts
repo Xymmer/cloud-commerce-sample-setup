@@ -14,7 +14,8 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://api.c432wmya2v-teamspart1-s2-public.model-t.myhybris.cloud',
+          // The following line (baseUrl) is commented out because the build process will add it automatically (set in index.html at meta=occ-backend-base-url)
+          // baseUrl: 'https://localhost:9002',
           prefix: '/occ/v2/'
         }
       },
