@@ -1,5 +1,5 @@
 {
-  "name": "mystore",
+  "name": "spartacusstore",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run mystore:serve-ssr",
-    "serve:ssr": "node dist/mystore/server/main.js",
-    "build:ssr": "ng build --prod && ng run mystore:server:production && mv dist/mystore-server/main.js dist/server.js",
-    "prerender": "ng run mystore:prerender"
+    "dev:ssr": "ng run spartacusstore:serve-ssr",
+    "serve:ssr": "node dist/spartacusstore/server/main.js",
+    "build:ssr": "ng build --prod && ng run spartacusstore:server:production && mv dist/spartacusstore-server/main.js dist/server.js",
+    "prerender": "ng run spartacusstore:prerender"
   },
   "private": true,
   "dependencies": {
