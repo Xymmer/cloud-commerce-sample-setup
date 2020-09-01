@@ -15,12 +15,13 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
       backend: {
         occ: {
           baseUrl: 'https://localhost:9002',
-          prefix: '/rest/v2/'
+          prefix: '/occ/v2/'
         }
       },
-      context: {
-        currency: ['USD'],
-        language: ['en'],
+     context: {
+        urlParameters: ['baseSite', 'language', 'currency'],
+        baseSite: ['electronics-spa','apparel-uk-spa'],
+        currency: ['USD', 'GBP',]
       },
       i18n: {
         resources: translations,
