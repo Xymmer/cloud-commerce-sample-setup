@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "spartacusstore": {
+    "mystore": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/spartacusstore",
+            "outputPath": "dist/mystore",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "spartacusstore:build"
+            "browserTarget": "mystore:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "spartacusstore:build:production"
+              "browserTarget": "mystore:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "spartacusstore:build"
+            "browserTarget": "mystore:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "spartacusstore:serve"
+            "devServerTarget": "mystore:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "spartacusstore:serve:production"
+              "devServerTarget": "mystore:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/spartacusstore-server",
+            "outputPath": "dist/mystore-server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -146,21 +146,21 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "spartacusstore:build",
-            "serverTarget": "spartacusstore:server"
+            "browserTarget": "mystore:build",
+            "serverTarget": "mystore:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "spartacusstore:build:production",
-              "serverTarget": "spartacusstore:server:production"
+              "browserTarget": "mystore:build:production",
+              "serverTarget": "mystore:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "spartacusstore:build:production",
-            "serverTarget": "spartacusstore:server:production",
+            "browserTarget": "mystore:build:production",
+            "serverTarget": "mystore:server:production",
             "routes": [
               "/"
             ]
@@ -172,8 +172,8 @@
       }
     }
   },
-  "defaultProject": "spartacusstore",
+  "defaultProject": "mystore",
   "cli": {
-    "analytics": "627a2eb6-855a-4681-a1fd-5c9e9986ff36"
+    "analytics": "4702a82f-6e20-4309-958b-19f6df0e909a"
   }
 }
