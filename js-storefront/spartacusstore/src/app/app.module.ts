@@ -14,7 +14,7 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://localhost:9002',
+//          baseUrl: 'https://localhost:9002',
           prefix: '/occ/v2/'
         }
       },
