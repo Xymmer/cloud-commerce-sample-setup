@@ -16,7 +16,7 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
         occ: {
           // The following line (baseUrl) is commented out because the build process will add it automatically (set in index.html at meta=occ-backend-base-url)
           // baseUrl: 'https://localhost:9002',
-          prefix: '/occ/v2/'
+          prefix: '/occ/v2/' // 'occ/v2/' for 2005 or later, 'rest/v2/' for 1905
         }
       },
      context: {
