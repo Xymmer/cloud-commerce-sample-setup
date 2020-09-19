@@ -14,13 +14,17 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://localhost:9002',
-          prefix: '/rest/v2/'
+          // The following line (baseUrl) is commented out because the build process will add it automatically (set in index.html at meta=occ-backend-base-url)
+          // baseUrl: 'https://localhost:9002',
+
+          // the prefix is /rest/v2/ with 1905, and by default /occ/v2 with 2005
+          prefix: '/occ/v2/'
         }
       },
       context: {
-        currency: ['USD'],
-        language: ['en'],
+        urlParameters: ['baseSite', 'language', 'currency'],
+        baseSite: ['electronics-spa','apparel-uk-spa'],
+        currency: ['USD', 'GBP',]
       },
       i18n: {
         resources: translations,
