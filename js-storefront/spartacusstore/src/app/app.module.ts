@@ -35,7 +35,7 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
         level: '3.0'
       }
     }),
-    BrowserTransferStateModule
+    BrowserTransferStateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
