@@ -14,7 +14,10 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
     B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          baseUrl: 'https://spartacus-dev0.eastus.cloudapp.azure.com:9002',
+          // The following line (baseUrl) is commented out because the build process will add it automatically (set in index.html at meta=occ-backend-base-url)
+          // baseUrl: 'https://localhost:9002',
+
+          // the prefix is /rest/v2/ with 1905, and by default /occ/v2 with 2005
           prefix: '/occ/v2/'
         }
       },
