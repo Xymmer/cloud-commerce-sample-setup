@@ -52,11 +52,6 @@
     ],
     "storefrontAddons": [
         {
-            "addon": "spartacussampledataaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-        {
             "addon": "commerceorgsamplesaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
