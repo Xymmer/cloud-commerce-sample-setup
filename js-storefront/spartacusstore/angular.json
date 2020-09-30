@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/spartacusstore",
+            "outputPath": "dist/spartacusstore/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -130,7 +130,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/spartacusstore-server",
+            "outputPath": "dist/spartacusstore/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -179,6 +179,6 @@
   },
   "defaultProject": "spartacusstore",
   "cli": {
-    "analytics": "04748113-5d1c-4bbd-8631-1f03d2e75be9"
+    "analytics": "c35cd40b-2c5d-4301-9c5a-3980c25843f0"
   }
 }
