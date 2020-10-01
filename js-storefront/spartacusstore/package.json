@@ -34,6 +34,8 @@
     "@nguniversal/express-engine": "^10.1.0",
     "@spartacus/assets": "^3.0.0-next.2",
     "@spartacus/core": "^3.0.0-next.2",
+    "@spartacus/my-account": "^3.0.0-next.2",
+    "@spartacus/setup": "^3.0.0-next.2",
     "@spartacus/storefront": "^3.0.0-next.2",
     "@spartacus/styles": "^3.0.0-next.2",
     "bootstrap": "4.2.1",
