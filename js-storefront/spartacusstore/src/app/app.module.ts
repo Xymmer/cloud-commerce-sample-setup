@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
-import { B2cStorefrontModule } from '@spartacus/storefront';
+import { B2bStorefrontModule } from '@spartacus/setup';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    B2cStorefrontModule.withConfig({
+    B2bStorefrontModule.withConfig({
       backend: {
         occ: {
           // The following line (baseUrl) is commented out because the build process will add it automatically (set in index.html at meta=occ-backend-base-url)
@@ -22,9 +22,10 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
         }
       },
       context: {
-        currency: ['USD', 'GBP'],
-        language: ['en','de'],
-        baseSite: ['electronics-spa', 'apparel-uk-spa', 'powertools-spa']
+        urlParameters: ['baseSite', 'language', 'currency'],
+        currency: ['USD'],
+        language: ['en'],
+        baseSite: ['powertools-spa']
       },
       i18n: {
         resources: translations,
