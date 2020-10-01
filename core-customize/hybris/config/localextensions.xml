@@ -19,8 +19,8 @@
     <extension name='assistedservicewebservices' />
     <extension name='assistedserviceyprofileaddon' />
     <extension name='assistedserviceyprofilefacades' />
-    <extension name='electronicsstore' />
-    <extension name='apparelstore' />
+//    <extension name='electronicsstore' />
+//    <extension name='apparelstore' />
     <extension name='powertoolsstore' />
 
     <extension name='multicountrysampledataaddon' />
