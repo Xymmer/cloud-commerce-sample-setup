@@ -166,11 +166,13 @@ ysapproductconfigaddon -->
     <extension name='ticketsystem' />
     <extension name='ticketsystembackoffice' />
 
-<!-- datahubadapter
+<!-- 
+datahubadapter
 datahubclient
 dataimportcommons -->
 
-<!-- entitlementbackoffice
+<!-- 
+entitlementbackoffice
 entitlementfacades
 entitlementservices -->
 
@@ -213,7 +215,9 @@ entitlementservices -->
     <extension name='warehousingfacades' />
     <extension name='warehousingwebservices' />
     <extension name='yacceleratorordermanagement' />
-    
+
+<!--returnssupport-->
+
     <extension name='personalizationcms' />
     <extension name='personalizationcmsbackoffice' />
     <extension name='personalizationcmsweb' />
@@ -243,18 +247,40 @@ entitlementservices -->
     <extension name='personalizationsearchsmartedit' />
     <extension name='personalizationsearchweb' />
 
-<!--
+<!--personalizationymkt-->
+
     <extension name='adminapi' />
     <extension name='auditreportservices' />
-    <extension name='deltadetection' />
     <extension name='embeddedserver' />
+    <extension name='deltadetection' />
     <extension name='groovynature' />
     <extension name='springintegrationlibs' />
     <extension name='tomcatembeddedserver' />
-    <extension name='yempty' />
+   <extension name='yempty' />
     <extension name='yvoid' />
--->
+
 <extension name='oauth2' />
+
+<!--
+c4ccpiquote
+c4ccustomer
+cissapdigitalpayment
+customerticketingc4cb2bintegration
+customerticketingc4cintegration
+-->
+
+<!--
+gigyab2bbackoffice
+gigyab2bfacades
+gigyab2bloginaddon
+gigyab2bservices
+gigyabackoffice
+gigyacpicustomerexchangemdm
+gigyacpicustomerexchangemdmb2b
+gigyafacades
+gigyaloginaddon
+gigyaservices
+-->
 
 
     <extension name='promotionenginebackoffice' />
@@ -333,13 +359,118 @@ subscriptionservices	 -->
     <extension name='webservicescommons' />
     <extension name='ywebservices' />   
 
-<!--orbeonweb
+<!--
+orbeonweb
 xyformsbackoffice
 xyformsfacades
 xyformssamples
 xyformsservices
 xyformsstorefrontcommons
 xyformsweb-->
+
+<!--
+sapbillinginvoiceaddon
+sapbillinginvoicefacades
+sapbillinginvoiceservices
+sapc4ccustomerb2c
+sapcore
+sapcoreaddon
+sapcoreconfiguration
+sapcoreconfigurationbackoffice
+sapcpiadapter
+sapcpicustomerexchange
+sapcpicustomerexchangeb2b
+sapcpicustomerexchangemdm
+sapcpiomsreturnsexchange
+sapcpiorderexchange
+sapcpiorderexchangeb2b
+sapcpiorderexchangeoms
+sapcpiorderexchangeomsb2b
+sapcpiproductexchange
+sapcpireturnsexchange
+sapcpqquotefacades
+sapcpqquoteintegration
+sapcpqquoteintegrationaddon
+sapcustomerb2b
+sapcustomerb2bbackoffice
+sapcustomerb2c
+sapcustomerlookupaddon
+sapcustomerlookupservice
+sapdigitalpaymentaddon
+sapdigitalpaymentb2baddon
+sapdigitalpaymentbackoffice
+sapentitlementsaddon
+sapentitlementsfacades
+sapentitlementsintegration
+sapentitlementsintegrationb2b
+sapfsmserviceorder
+sapinvoiceaddon
+sapinvoicebol
+sapinvoicefacades
+sapinvoiceservices
+sapmodel
+sapmodelbackoffice
+saporderexchange
+saporderexchangeb2b
+saporderexchangebackoffice
+saporderexchangeoms
+saporderexchangeomsb2b
+sapproductconfigb2b
+sapproductconfigb2baddon
+sapproductconfigb2bservices
+sapproductconfigbackoffice
+sapproductconfigbackofficecps
+sapproductconfigcpiorderexchange
+sapproductconfigcpiorderexchangecps
+sapproductconfigcpiquoteexchange
+sapproductconfigfacades
+sapproductconfigintegration
+sapproductconfigocc
+sapproductconfigrules
+sapproductconfigrulesbackoffice
+sapproductconfigrulescps
+sapproductconfigruntimecps
+sapproductconfigruntimeinterface
+sapproductconfigruntimemock
+sapproductconfigruntimepci
+sapproductconfigservices
+sapproductcpqintegration
+sapqualtricsaddon
+sapquoteintegration
+sapquoteintegrationaddon
+sapquoteintegrationoms
+sapreturnsbackoffice
+sapreturnsexchange
+sapreturnsexchangeb2b
+sapsalesordersimulation
+sapsalesordersimulationbackoffice
+sapserviceorder
+sapserviceorderaddon
+sapserviceorderbackoffice
+sapserviceorderfacades
+sapserviceproduct
+sapymktclickstream
+sapymktcommon
+sapymktconsent
+sapymktdatareplication
+sapymktrecommendation
+sapymktrecommendationaddon
+sapymktrecommendationbuffer
+sapymktrecommendationwebservices
+sapymktsegmentation
+sapymktsegmentationb2b
+sapymktsegmentationwebservices
+
+ysapcpiomsfulfillment
+ysapcpis4cmomsfulfillment
+ysapdpordermanagement
+ysaperpreturnprocess
+ysapomsreturnprocess
+ysapproductconfigaddon
+
+scimfacades
+scimservices
+scimwebservices-->
 
 <extension name='modeltacceleratorservices' />
 
