@@ -1,6 +1,10 @@
 <hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
   <extensions>
     <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+
+<extension name='yb2bacceleratorstorefront' />
+<extension name='spartacussampledata' />
+
     <extension name='adaptivesearch' />
     <extension name='adaptivesearchbackoffice' />
     <extension name='adaptivesearchfacades' />
@@ -19,16 +23,51 @@
     <extension name='assistedserviceservices' />
     <extension name='assistedservicestorefront' />
     <extension name='assistedservicewebservices' />
+
     <extension name='assistedserviceyprofileaddon' />
     <extension name='assistedserviceyprofilefacades' />
+    <extension name='yaasyprofileconnect' />
+
+<extension name='b2bacceleratoraddon' />
+<extension name='b2bacceleratorfacades' />
+<extension name='b2bacceleratorservices' />
+<extension name='b2bocc' />
+<extension name='b2bocctests' />
+<extension name='b2bwebservicescommons' />
+<extension name='commerceorgaddon' />
+    <extension name='commerceorgsamplesaddon' />
+<extension name='powertoolsstore' />
+
+<extension name='accountsummaryaddon' />
+<extension name='b2bpunchout' />
+<extension name='b2bpunchoutaddon' />
+<!-- 
+savedorderforms
+savedorderformsocc
+secureportaladdon
+-->
+
+<extension name='b2bapprovalprocess' />
+<extension name='b2bapprovalprocessfacades' />
+<extension name='b2bcommerce' />
+<extension name='b2bcommercebackoffice' />
+<extension name='b2bcommercefacades' />
 
     <extension name='electronicsstore' />
     <extension name='apparelstore' />
-    <extension name='powertoolsstore' />
 
-    <extension name='multicountrysampledataaddon' />
-    
+<!-- 
+captchaaddon
+-->
+
+   <extension name='multicountrysampledataaddon' />
+
+<!-- 
+wishlist
+-->
+   
     <extension name='pcmbackofficesamplesaddon' />
+
     <extension name='pcmbackoffice' />
     
     <extension name='backoffice' />
@@ -36,22 +75,35 @@
     <extension name='platformbackoffice' />
     <extension name='ybackoffice' />
 
-    <!--<extension name='yacceleratorbackoffice' />-->
+    <extension name='yacceleratorbackoffice' />
     <extension name='yacceleratorcore' />
-    <extension name='yacceleratorstorefront' />
 <extension name='yacceleratorfacades' />
 <extension name='yacceleratorinitialdata' />
+    <extension name='yacceleratorstorefront' />
 <extension name='yaddon' />
 
     <extension name='basecommerce' />
     <extension name='basecommercebackoffice' />
-
+<extension name='customerreview' />
     <extension name='payment' />
+<extension name='promotions' />
+<extension name='promotionsbackoffice' />
+<extension name='voucher' />
+<extension name='voucherbackoffice' />
+
+<extension name='profileservices' />
+<extension name='profiletagaddon' />
+
+<extension name='merchandisingaddon' />
+<extension name='merchandisingcmswebservices' />
+<extension name='merchandisingservices' />
+<extension name='merchandisingservicesbackoffice' />
+<extension name='merchandisingsmartedit' />
+<extension name='merchandisingstorefrontsampledataaddon' />
 
     <extension name='commercefacades' />
     <extension name='commerceservices' />
     <extension name='commerceservicesbackoffice' />
-
     <extension name='commercewebservices' />
     <extension name='commercewebservicescommons' />
     <extension name='commercewebservicestests' />
@@ -62,30 +114,26 @@
     <extension name='configurablebundlebackoffice' />
     <extension name='configurablebundlefacades' />
     <extension name='configurablebundleservices' />
+<!-- configurablebundleocc, configurablebundleocctests -->
 
-<extension name='commerceorgaddon' />
-    <extension name='commerceorgsamplesaddon' />
+<!-- sapproductconfigb2baddon
+sapproductconfigb2bservices
+sapproductconfigfacades
+sapproductconfigocc
+sapproductconfigrules
+sapproductconfigrulesbackoffice
+sapproductconfigruntimeinterface
+sapproductconfigruntimemock
+sapproductconfigservices
+ysapproductconfigaddon -->
 
-<extension name='accountsummaryaddon' />
-<extension name='b2bacceleratoraddon' />
-<extension name='b2bacceleratorfacades' />
-<extension name='b2bacceleratorservices' />
-<extension name='b2bapprovalprocess' />
-<extension name='b2bapprovalprocessfacades' />
-<extension name='b2bcommerce' />
-<extension name='b2bcommercebackoffice' />
-<extension name='b2bcommercefacades' />
-<extension name='b2bocc' />
-<!-- <extension name='b2bocctests' /> -->
-<extension name='b2bordermanagementfacades' />
-<extension name='b2bordermanagementwebservices' />
-<extension name='b2bpunchout' />
-<extension name='b2bpunchoutaddon' />
-<extension name='b2bwebservicescommons' />
-<extension name='yb2bacceleratorstorefront' />
+<extension name='consignmenttrackingaddon' />
+<extension name='consignmenttrackingbackoffice' />
+<extension name='consignmenttrackingfacades' />
+<extension name='consignmenttrackingmock' />
+<extension name='consignmenttrackingocc' />
+<extension name='consignmenttrackingservices' />
 
-<!-- <extension name='captchaaddon' /> -->
-    
     <extension name='acceleratorbackoffice' />
     <extension name='acceleratorcms' />
     <extension name='acceleratorfacades' />
@@ -99,52 +147,63 @@
     <extension name='couponfacades' />
     <extension name='couponservices' />
     <extension name='couponwebservices' />
+
     <extension name='customercouponaddon' />
     <extension name='customercouponbackoffice' />
     <extension name='customercouponfacades' />
     <extension name='customercouponocc' />
     <extension name='customercouponsamplesaddon' />
     <extension name='customercouponservices' />
+
     <extension name='customerinterestsaddon' />
     <extension name='customerinterestsfacades' />
     <extension name='customerinterestsocc' />
     <extension name='customerinterestsservices' />
+
     <extension name='customersupportbackoffice' />
     <extension name='customerticketingaddon' />
     <extension name='customerticketingfacades' />
     <extension name='ticketsystem' />
     <extension name='ticketsystembackoffice' />
-    
+
+<!-- datahubadapter
+datahubclient
+dataimportcommons -->
+
+<!-- entitlementbackoffice
+entitlementfacades
+entitlementservices -->
+
     <extension name='eventtrackingmodel' />
     <extension name='eventtrackingpublisher' />
     <extension name='eventtrackingservices' />
     <extension name='eventtrackingwsaddon' />
-    
+
     <extension name='inboundservices' />
     <extension name='integrationbackoffice' />
-    <!--<extension name='integrationbackofficetest' />-->
+    <extension name='integrationbackofficetest' />
     <extension name='integrationmonitoringbackoffice' />
     <extension name='integrationservices' />
-    
     <extension name='odata2services' />
     <extension name='odata2webservices' />
     <extension name='odata2webservicesfeaturetests' />
-    
     <extension name='outboundservices' />
     <extension name='outboundsync' />
     <extension name='outboundsyncbackoffice' />
-    
+
     <extension name='messagecentercsfacades' />
     <extension name='messagecentercsocc' />
     <extension name='messagecentercsservices' />
-    
+
     <extension name='notificationaddon' />
     <extension name='notificationfacades' />
     <extension name='notificationocc' />
     <extension name='notificationservices' />
-    
+
     <extension name='npmancillary' />
-    
+
+<extension name='b2bordermanagementfacades' />
+<extension name='b2bordermanagementwebservices' />
     <extension name='ordermanagementaddon' />
     <extension name='ordermanagementfacades' />
     <extension name='ordermanagementwebservices' />
@@ -165,59 +224,45 @@
     <extension name='personalizationsmartedit' />
     <extension name='personalizationwebservices' />
     <extension name='previewpersonalizationweb' />
+
     <extension name='personalizationaddon' />
     <extension name='personalizationintegration' />
     <extension name='personalizationintegrationbackoffice' />
     <extension name='personalizationyprofile' />
     <extension name='personalizationyprofilesampledataaddon' />
+
     <extension name='personalizationpromotions' />
     <extension name='personalizationpromotionsbackoffice' />
     <extension name='personalizationpromotionssampledataaddon' />
     <extension name='personalizationpromotionssmartedit' />
     <extension name='personalizationpromotionsweb' />
+
     <extension name='personalizationsearch' />
     <extension name='personalizationsearchbackoffice' />
     <extension name='personalizationsearchsamplesaddon' />
     <extension name='personalizationsearchsmartedit' />
     <extension name='personalizationsearchweb' />
 
-<extension name='merchandisingaddon' />
-<extension name='merchandisingcmswebservices' />
-<extension name='merchandisingservices' />
-<extension name='merchandisingservicesbackoffice' />
-<extension name='merchandisingsmartedit' />
-<extension name='merchandisingstorefrontsampledataaddon' />
-    
-<extension name='permissionsfacades' />
-<extension name='permissionswebservices' />
-
-    
-<extension name='previewwebservices' />
-
-    <extension name='tomcatembeddedserver' />
-    
+<!--
     <extension name='adminapi' />
-    
     <extension name='auditreportservices' />
-    
-<extension name='groovynature' />
-<extension name='springintegrationlibs' />
-    
     <extension name='deltadetection' />
-    
-    
-<extension name='promotions' />
-<extension name='promotionsbackoffice' />
+    <extension name='embeddedserver' />
+    <extension name='groovynature' />
+    <extension name='springintegrationlibs' />
+    <extension name='tomcatembeddedserver' />
+    <extension name='yempty' />
+    <extension name='yvoid' />
+-->
+<extension name='oauth2' />
+
+
     <extension name='promotionenginebackoffice' />
     <extension name='promotionenginesamplesaddon' />
     <extension name='promotionengineservices' />
-    <extension name='droolsruleengineservices' />
 
-<extension name='voucher' />
-<extension name='voucherbackoffice' />
-    
+    <extension name='droolsruleengineservices' />
     <extension name='ordercalculation' />
-    
     <extension name='rulebuilderbackoffice' />
     <extension name='ruledefinitions' />
     <extension name='ruleengine' />
@@ -226,74 +271,77 @@
     
     <extension name='kymaintegrationbackoffice' />
     <extension name='kymaintegrationservices' />
-    
+
     <extension name='solrfacetsearch' />
     <extension name='solrfacetsearchbackoffice' />
     <extension name='solrserver' />
-    
+
+    <!-- searchbackoffice
+searchprovidercssearchbackoffice
+searchprovidercssearchservices
+searchservices	-->
+
     <extension name='selectivecartfacades' />
     <extension name='selectivecartservices' />
     <extension name='selectivecartsplitlistaddon' />
-    
+
     <extension name='cmssmartedit' />
     <extension name='cmssmarteditwebservices' />
     <extension name='smartedit' />
     <extension name='smarteditaddon' />
     <extension name='smarteditwebservices' />
     
+
     <extension name='stocknotificationaddon' />
     <extension name='stocknotificationfacades' />
     <extension name='stocknotificationservices' />
-    
-<extension name='consignmenttrackingaddon' />
-<extension name='consignmenttrackingbackoffice' />
-<extension name='consignmenttrackingfacades' />
-<extension name='consignmenttrackingmock' />
-<extension name='consignmenttrackingocc' />
-<extension name='consignmenttrackingservices' />
-    
-<extension name='customerreview' />
 
+<!-- subscriptionbundlebackoffice
+subscriptionbundlefacades
+subscriptionbundleservices
 
-    
+subscriptionbackoffice
+subscriptionfacades
+subscriptionservices	 -->
+
     <extension name='textfieldconfiguratortemplateaddon' />
     <extension name='textfieldconfiguratortemplatebackoffice' />
     <extension name='textfieldconfiguratortemplatefacades' />
     <extension name='textfieldconfiguratortemplateocc' />
     <extension name='textfieldconfiguratortemplateocctests' />
     <extension name='textfieldconfiguratortemplateservices' />
-    
+
     <extension name='timedaccesspromotionengineaddon' />
     <extension name='timedaccesspromotionenginebackoffice' />
     <extension name='timedaccesspromotionenginefacades' />
     <extension name='timedaccesspromotionengineocc' />
     <extension name='timedaccesspromotionenginesamplesaddon' />
     <extension name='timedaccesspromotionengineservices' />
-    
+
+<extension name='cms2' />
+<extension name='cms2lib' />
     <extension name='cmsbackoffice' />
+    <extension name='cmscockpit' />
     <extension name='cmsfacades' />
     <extension name='cmsocc' />
     <extension name='cmswebservices' />
-    
-<extension name='cms2' />
-<extension name='cms2lib' />
-    
+<extension name='previewwebservices' />
+
+
+<extension name='permissionsfacades' />
+<extension name='permissionswebservices' />
     <extension name='webservicescommons' />
-    
-    <extension name='ywebservices' />
+    <extension name='ywebservices' />   
 
-<!-- Sample Extensions -->
-    <extension name='spartacussampledata' />
-<!--<extension name='kiwi' />
-    <extension name='tiger'/> -->
+<!--orbeonweb
+xyformsbackoffice
+xyformsfacades
+xyformssamples
+xyformsservices
+xyformsstorefrontcommons
+xyformsweb-->
 
-<!-- If you want to test Cloud Hot Folders locally download the extensions from https://launchpad.support.sap.com/#/notes/2817992 and uncomment the following -->
-    <!--<extension name='azurecloudhotfolder' />
-    <extension name='cloudcommons' />
-    <extension name='cloudhotfolder' />-->
+<extension name='modeltacceleratorservices' />
 
-<extension name='yempty' />
-<extension name='yvoid' />
-    
   </extensions>
 </hybrisconfig>
