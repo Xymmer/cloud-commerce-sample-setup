@@ -171,10 +171,9 @@ datahubadapter
 datahubclient
 dataimportcommons -->
 
-<!-- 
-entitlementbackoffice
-entitlementfacades
-entitlementservices -->
+    <extension name='entitlementbackoffice' />
+    <extension name='entitlementfacades' />
+    <extension name='entitlementservices' />
 
     <extension name='eventtrackingmodel' />
     <extension name='eventtrackingpublisher' />
@@ -256,10 +255,10 @@ entitlementservices -->
     <extension name='groovynature' />
     <extension name='springintegrationlibs' />
     <extension name='tomcatembeddedserver' />
-   <extension name='yempty' />
+    <extension name='yempty' />
     <extension name='yvoid' />
 
-<extension name='oauth2' />
+    <extension name='oauth2' />
 
 <!--
 c4ccpiquote
