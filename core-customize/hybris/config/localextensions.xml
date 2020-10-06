@@ -62,11 +62,11 @@ secureportaladdon
 <extension name='b2bcommercebackoffice' />
 <extension name='b2bcommercefacades' />
 
-<!-- 
+
 
     <extension name='electronicsstore' />
     <extension name='apparelstore' />
--->
+
 
 <!-- 
 captchaaddon
