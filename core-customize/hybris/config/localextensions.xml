@@ -116,16 +116,17 @@ wishlist
     <extension name='configurablebundleservices' />
 <!-- configurablebundleocc, configurablebundleocctests -->
 
-<!-- sapproductconfigb2baddon
-sapproductconfigb2bservices
-sapproductconfigfacades
-sapproductconfigocc
-sapproductconfigrules
-sapproductconfigrulesbackoffice
-sapproductconfigruntimeinterface
-sapproductconfigruntimemock
-sapproductconfigservices
-ysapproductconfigaddon -->
+<!-- added sapproduct* back after commenting out as i was getting errors related to -->
+<extension name='sapproductconfigb2baddon' />
+<extension name='sapproductconfigb2bservices' />
+<extension name='sapproductconfigfacades' />
+<extension name='sapproductconfigocc' />
+<extension name='sapproductconfigrules' />
+<extension name='sapproductconfigrulesbackoffice' />
+<extension name='sapproductconfigruntimeinterface' />
+<extension name='sapproductconfigruntimemock' />
+<extension name='sapproductconfigservices' />
+<extension name='ysapproductconfigaddon' />
 
 <extension name='consignmenttrackingaddon' />
 <extension name='consignmenttrackingbackoffice' />
