@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
-import { B2bStorefrontModule } from '@spartacus/setup';
+import { B2cStorefrontModule } from '@spartacus/storefront';
 
 @NgModule({
   declarations: [
@@ -11,21 +11,17 @@ import { B2bStorefrontModule } from '@spartacus/setup';
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
-    B2bStorefrontModule.withConfig({
+    B2cStorefrontModule.withConfig({
       backend: {
         occ: {
-          // The following line (baseUrl) is commented out because the build process will add it automatically (set in index.html at meta=occ-backend-base-url)
-          // baseUrl: 'https://localhost:9002',
-
-          // the prefix is /rest/v2/ with 1905, and by default /occ/v2 with 2005
-          prefix: '/occ/v2/'
+  //        baseUrl: 'https://localhost:9002'
         }
       },
       context: {
         urlParameters: ['baseSite', 'language', 'currency'],
-        currency: ['USD'],
+        baseSite: ['electronics-spa', 'apparel-uk-spa'],
         language: ['en'],
-        baseSite: ['powertools-spa']
+        currency: ['USD','GBP']
       },
       i18n: {
         resources: translations,
