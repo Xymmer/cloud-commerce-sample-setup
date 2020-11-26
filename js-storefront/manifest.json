@@ -4,6 +4,11 @@
             "name": "spartacusstore",
             "path": "spartacusstore",
             "enableSSR": true
+        },
+        {
+            "name": "b2bstore",
+            "path": "b2bstore",
+            "enableSSR": true
         }
     ],
         "nodeVersion": "12"

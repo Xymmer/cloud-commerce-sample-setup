@@ -106,10 +106,10 @@ wishlist
 <extension name='voucher' />
 <extension name='voucherbackoffice' />
 
-<!-- 
+
 <extension name='profileservices' />
 <extension name='profiletagaddon' />
--->
+
 
 <!-- 
 <extension name='merchandisingaddon' />
